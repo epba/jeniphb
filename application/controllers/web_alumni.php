@@ -309,9 +309,9 @@ class Web_alumni extends CI_Controller {
 		}
 	}
 
-	public function form_update_profil($id)
+	public function form_update_profil()
 	{
-		$data['profil'] = $this->M_alumni->get_profil_alumni($id);
+		$data['profil'] = $this->M_alumni->get_profil_alumni();
 		$data['title']	= "Update Profil";
 		$this->load->library('googlemaps');
 		$marker = array();
